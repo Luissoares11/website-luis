@@ -80,6 +80,12 @@
     border-radius: 4px;
 
 }
+@media (max-width: 1440px) {
+    .projectsContainer {
+        max-width: 80%;
+    }
+}
+
 
 @media (max-width: 768px) {
     .projectsContainer {
@@ -96,11 +102,15 @@
 
     .projectOverlay {
         padding: 5px;
-        flex-direction: row;
+        flex-direction: column;
+        row-gap: 0;
+
     }
 
     .projectCategory {
+        margin-top: 0px;
         margin-left: 1px;
+        padding: 3px;
     }
 }
 

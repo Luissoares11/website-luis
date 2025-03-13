@@ -69,7 +69,9 @@ function Home() {
                               <p className={styles.boxDescription}>{box.description}</p>
                           </div>
                           <div>
-                              <span className={styles.boxCategory}>{box.category}</span>
+                            <span className={`${styles.boxCategory} ${box.id === 1 ? styles.devCategory : styles.downloadCategory}`}>
+                                {box.category}
+                            </span>
                           </div>                        
                       </div>
                   </div>

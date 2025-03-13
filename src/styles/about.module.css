@@ -93,12 +93,18 @@
         opacity: 1;
     }
 }
+@media (width: 1440px) {
+    .container {
+        margin-bottom: 7%;
+    }
+}
 
 @media (max-width: 768px) {
     .container {
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-left: 6%;
 
     }
     .infoGrid {
@@ -108,8 +114,9 @@
         margin-top: 20px;
     }
     .profileImage {
-        margin-top: 20px;
-        margin-right: 12%;
+        width: 70%;
+        margin-top: 25px;
+        margin-right: 18%;
     }
 }
 

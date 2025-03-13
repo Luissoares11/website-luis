@@ -11,17 +11,23 @@
 
 @media (max-width: 768px) {
     .footer {
-        padding: 15px;
+        padding: 10px;
         font-size: 14px;
         align-items: center;
         width: 100%;
-        margin-left: 0px;
+        margin-left: 0;
     }
 }
 
 @media (width: 1024px) {
     .footer { 
-         margin-left: 34%;
+        margin-left: 34%;
+    }
+}
+
+@media (width: 1440px) {
+    .footer {
+        margin-left: 32%;
     }
 }
 /* © 2025 Luis Soares. All rights reserved.*/

@@ -87,4 +87,9 @@
   }
 }
 
+@media (max-width: 768px) {
+    .container {
+        margin-left: 6%;
+    }
+}
 /* © 2025 Luis Soares. All rights reserved.*/
