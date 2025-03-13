@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FolderOpenDot, House, User, GraduationCap } from "lucide-react";
 import { faGithub, faXTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
