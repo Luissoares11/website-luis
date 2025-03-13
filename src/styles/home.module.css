@@ -1,0 +1,158 @@
+.container {
+    text-align: left;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 55%;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 45px;
+    margin-left: 15px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-weight: bold;
+    animation: appear 3s ease-out;
+}
+
+.paragraph {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 17px;
+    animation: appear 3s ease-out;
+}
+
+.btnContainer {
+    animation: appear 3s ease-out;
+    margin-bottom: 70px;
+    margin-top: 0px;
+    margin-left: 17px;
+}
+
+.aboutBtn {
+    font-size: 20px;
+    color: #cecece;
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 8px;
+    border: 1px solid rgba(185, 185, 185, 0.247);
+    text-shadow: none;
+    padding: 5px 14px;
+
+}
+
+.homeBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px;
+    justify-content: center;
+    align-items: center; 
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    animation: slideIn 0.8s ease-out forwards;
+    margin-bottom: 0px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.247);
+}
+
+.boxCard {
+    position: relative;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+.boxCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 20px rgba(27, 27, 27, 0.1);
+}
+
+.boxGif {
+    width: 100%; 
+    border-radius: 8px 8px 0 0;
+}
+
+.boxOverlay {
+    margin-top: 0;
+    background: rgba(36, 36, 36, 0.6);
+    padding: 15px;
+    border-radius: 0 0 12px 12px;
+    color: #ffffff;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.boxTitle {
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.boxDescription {
+    margin-right: 0px;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.boxCategory {
+    position: fixed;
+    margin-right: 0px;
+    margin-left: 120px;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 65%;
+        align-items: center;
+    }
+    .title {
+        text-align: center;
+    }
+    .boxGrid {     
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .boxOverlay {
+        padding: 5px;
+        flex-direction: row;
+    }
+
+    .boxCategory {
+        margin-left: 1px;
+    }
+}
+

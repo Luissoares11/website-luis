@@ -1,0 +1,125 @@
+.projectsContainer {
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 55%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.title {
+    font-size: 45px;
+    margin-left: 15px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: bold;
+    animation: appear 3s ease-out;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px;
+    justify-content: center;
+    align-items: center; 
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+.projectCard {
+    position: relative;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.projectCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 20px rgba(27, 27, 27, 0.1);
+}
+
+.projectGif {
+    width: 100%; 
+    border-radius: 8px 8px 0 0;
+}
+
+.projectOverlay {
+    margin-top: 0;
+    background: rgba(36, 36, 36, 0.6);
+    padding: 15px;
+    border-radius: 0 0 12px 12px;
+    color: #ffffff;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.projectTitle {
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.projectDescription {
+    margin-right: 0px;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.projectCategory {
+    position: fixed;
+    margin-left: 120px;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+
+}
+
+@media (max-width: 768px) {
+    .projectsContainer {
+        padding: 20px;
+        max-width: 65%;
+        align-items: center;
+    }
+    .title {
+        text-align: center;
+    }
+    .projectsGrid {     
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projectOverlay {
+        padding: 5px;
+        flex-direction: row;
+    }
+
+    .projectCategory {
+        margin-left: 1px;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

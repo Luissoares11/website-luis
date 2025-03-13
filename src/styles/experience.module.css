@@ -1,0 +1,90 @@
+.container {
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin: 5% auto;
+    max-width: 900px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.247);
+    padding-bottom: 50px;
+}
+
+.title, .paragraf, div .phase {
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+.title {
+    font-size: 45px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ececec;
+    text-align: center;
+}
+
+.paragraf {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 75px;
+    color: #afafaf;
+    text-align: center;
+}
+
+.phases {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ececec;
+}
+
+.time {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+}
+  
+.description {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 30px;
+    color: #afafaf;
+}
+  
+.uni {
+    margin-left: px;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ecececce;
+    text-align: center;
+}
+
+.list {
+    margin-left: 0px;
+    list-style-type: disc;
+}
+  
+.sublist {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+  
+.bold {
+    font-weight: bold;
+    color: #ffffffcc;
+}
+  
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+
+/* © 2025 Luis Soares. All rights reserved.*/

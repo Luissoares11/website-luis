@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin: 5% auto;
+    max-width: 900px;
+    margin-bottom: 22px;
+}
+
+.textabout {
+    flex: 1;
+    animation: appear 3s ease-out;
+}
+
+.profileImage {
+    width: 280px;
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-left: 40px;
+    opacity: 0; 
+    animation: slideleft 0.8s ease-out forwards;
+}
+
+.title {
+    font-size: 45px;
+    margin-bottom: 10px;
+    animation: appear 0.8s ease-out;
+}
+
+.paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    opacity: 0; 
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.034);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.boxHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 18px;
+    color: #c0c0c0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
+@keyframes slideleft {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(10px);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .infoGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .profileImage {
+        margin-top: 20px;
+        margin-right: 12%;
+    }
+}
+
+/* © 2025 Luis Soares. All rights reserved.*/
