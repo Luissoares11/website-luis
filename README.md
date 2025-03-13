@@ -1,6 +1,6 @@
 # 🚀 Luis Soares Portfolio
 
-Welcome to my personal portfolio website! This project showcases my work, experience, and career journey as a software engineer.
+Welcome to my personal portfolio website! This project showcases my work, experience, and career journey as a engineering student.
 
 ## 🌐 Live Demo
 **[View Website](https://Luissoares11.github.io/website-luis)**
