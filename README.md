@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! This project showcases my work, experience, and career journey as a software engineer.
 
 ## 🌐 Live Demo
-**[View Website](https://Luissoares11.github.io/website)**
+**[View Website](https://Luissoares11.github.io/website-luis)**
 
 ---
 
@@ -36,10 +36,10 @@ To run this project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Luissoares11/website.git
+git clone https://github.com/Luissoares11/website-luis.git
 
 # Navigate to the project folder
-cd luissoares_website
+cd website-luis
 
 # Install dependencies
 npm install
