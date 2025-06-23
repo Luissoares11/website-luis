@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/website-luis/',
+  base: './',
 });
 
 // © 2025 Luis Soares. All rights reserved. 
