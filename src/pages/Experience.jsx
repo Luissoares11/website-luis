@@ -7,7 +7,7 @@ function Experience() {
             <p className={styles.paragraf}>Here, you can explore my journey—from my school years to the present.</p>
             
             <div className={styles.phase}>
-                <h3 className={styles.time}>University (2025 - Present)</h3>
+                <h3 className={styles.time}>University (2026 - Present)</h3>
                 <div className={styles.description}>
                     <h4 className={styles.uni}>Universidade do Porto and Universidade de Aveiro – Physics Engineering</h4>
 
