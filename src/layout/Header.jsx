@@ -28,7 +28,7 @@ function Header() {
             <nav>
                 <ul className={styles.ul2}>
                     <li><a href="https://github.com/Luissoares11" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a></li>
-                    <li><a href="https://x.com/Licah_11" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faXTwitter} /></a></li>
+                    <li><a href="https://x.com/luissoaress11" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faXTwitter} /></a></li>
                     <li><a href="https://www.linkedin.com/in/luis-soares-522b7727a/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></li>
                 </ul>
             </nav>    
