@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FolderOpenDot, House, User, GraduationCap } from "lucide-react";
 import { faGithub, faXTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import styles from "../styles/header.module.css";
-import fifa from '../assets/fifa.png';
+import about from '../assets/about.jpeg';
 
 function Header() {
     return (
         <header id="sidebar" className={styles.sidebar}>
             <Link to="/" className={styles.phome}>
                 <div className={styles.profile}>
-                    <img src={fifa} alt="Profile" />
+                    <img src={about} alt="Profile" />
                     <div className={styles.text}>
                         <h1>Luis Soares</h1>
                         <p>Engineering Student</p>

@@ -21,6 +21,16 @@ function Experience() {
                             </ul>
                         </li>
                         <li>
+                        <li>
+                            <span className={styles.bold}>Personal AI Assistant (Python, Fast API, SQLite):</span>
+                            <ul className={styles.sublist}>
+                                <li>Implemented persistent memory (facts, collections, aliases)</li>
+                                <li>Designed intent parsing using LLMs (Claude Haiku) with a local pattern cache for faster responses</li>
+                                <li>Integrated a computation engine using SymPy for symbolic mathematics</li>
+                                <li>Connected real-time external data sources (weather, football)</li>
+                                <li>Developed an action system for to-dos, reminders, timers, and Google Calendar sync</li>
+                            </ul>
+                        </li>
                             <span className={styles.bold}>Homelab & Systems:</span>
                             <ul className={styles.sublist}>
                                 <li>Started my homelab journey for self-hosting and cloud services.</li>
