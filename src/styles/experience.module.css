@@ -1,95 +1,159 @@
 .container {
-    justify-content: space-between;
-    align-items: center;
     text-align: left;
     margin: 5% auto;
-    max-width: 900px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border: 3px solid rgba(255, 255, 255, 0.247);
-    padding-bottom: 50px;
-}
-
-.title, .paragraf, div .phase {
-    animation: slideIn 0.8s ease-out forwards;
+    max-width: 860px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
 .title {
     font-size: 45px;
-    margin-bottom: 10px;
     font-weight: bold;
     color: #ececec;
     text-align: center;
+    margin: 0 0 10px;
 }
 
 .paragraf {
-    margin-top: 0;
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 75px;
     color: #afafaf;
     text-align: center;
+    margin: 0 0 60px;
 }
 
-.phases {
-    margin-top: 0px;
-    font-size: 20px;
+.timeline {
+    position: relative;
+    padding-left: 32px;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.timelineItem {
+    position: relative;
+}
+
+.timelineDot {
+    position: absolute;
+    left: -40px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #161616;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.timelineContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timelinePeriod {
+    font-size: 13px;
+    color: #888;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.timelineTitle {
+    font-size: 26px;
     font-weight: bold;
     color: #ececec;
+    margin: 0;
 }
 
-.time {
-    font-size: 30px;
+.timelineSub {
+    font-size: 15px;
+    color: #aaaaaa;
+    font-weight: normal;
+    margin: -12px 0 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sectionTitle {
+    font-size: 15px;
     font-weight: bold;
-    text-align: center;
-
+    color: #ffffff;
+    margin: 0;
 }
-  
-.description {
-    margin-top: 10px;
-    font-size: 1rem;
-    line-height: 30px;
+
+.tech {
+    font-size: 13px;
+    font-weight: normal;
+    color: #888;
+}
+
+.sectionText {
+    font-size: 14px;
     color: #afafaf;
-}
-  
-.uni {
-    margin-left: px;
-    font-size: 21px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #ecececce;
-    text-align: center;
+    margin: 0;
+    line-height: 1.6;
 }
 
 .list {
-    margin-left: 0px;
+    margin: 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
     list-style-type: disc;
 }
-  
-.sublist {
-    list-style-type: circle;
-    margin-left: 20px;
+
+.list li {
+    font-size: 14px;
+    color: #afafaf;
+    line-height: 1.6;
 }
-  
-.bold {
-    font-weight: bold;
-    color: #ffffffcc;
-}
-  
-@keyframes slideIn {
-  from {
-      opacity: 0;
-      transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(10px);
-  }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 768px) {
     .container {
-        margin-left: 6%;
+        margin: 5% 4%;
+        padding: 24px 20px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .paragraf {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .timeline {
+        padding-left: 24px;
+    }
+
+    .timelineDot {
+        left: -32px;
+    }
+
+    .timelineTitle {
+        font-size: 22px;
     }
 }
-/* © 2025 Luis Soares. All rights reserved.*/
+
+/* © 2025 Luis Soares. All rights reserved. */

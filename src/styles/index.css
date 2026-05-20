@@ -18,37 +18,34 @@ main {
 
 ::-webkit-scrollbar {
     width: 8px;
-    height: 100;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: #161616;
     border-radius: 8px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+}
 
-  @media only screen and (max-width: 768px) {
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
     body {
-      align-items: center;
-      margin: 0;
-      padding: 0;
-
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
 
     main {
-      align-items: left;
-      padding: 0;
-      margin-left: 0;
-      width: 100%;
+        padding: 0;
+        margin-left: 0;
+        width: 100%;
     }
 }
 
-/* © 2025 Luis Soares. All rights reserved.*/
+/* © 2025 Luis Soares. All rights reserved. */
