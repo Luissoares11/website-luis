@@ -190,13 +190,121 @@
 }
 
 .readmeContent {
-    white-space: pre-wrap;
-    word-break: break-word;
-    font-family: 'Courier New', monospace;
-    font-size: 13px;
     color: #dddddd;
+    font-size: 14px;
     line-height: 1.7;
     margin: 0;
+}
+
+/* markdown elements */
+.readmeContent h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.readmeContent h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 24px 0 12px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.readmeContent h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #eeeeee;
+    margin: 16px 0 8px 0;
+}
+
+.readmeContent p {
+    margin: 0 0 12px 0;
+    color: #cccccc;
+}
+
+.readmeContent a {
+    color: #7eb8f7;
+    text-decoration: none;
+}
+
+.readmeContent a:hover {
+    text-decoration: underline;
+}
+
+.readmeContent ul,
+.readmeContent ol {
+    margin: 0 0 12px 0;
+    padding-left: 20px;
+    color: #cccccc;
+}
+
+.readmeContent li {
+    margin-bottom: 4px;
+}
+
+.readmeContent code {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: #e2c08d;
+}
+
+.readmeContent pre {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    margin: 0 0 16px 0;
+}
+
+.readmeContent pre code {
+    background: none;
+    padding: 0;
+    font-size: 13px;
+    color: #dddddd;
+}
+
+.readmeContent blockquote {
+    border-left: 3px solid rgba(255, 255, 255, 0.2);
+    margin: 0 0 12px 0;
+    padding: 4px 16px;
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+.readmeContent table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 16px 0;
+    font-size: 13px;
+}
+
+.readmeContent th {
+    text-align: left;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.readmeContent td {
+    padding: 8px 12px;
+    color: #cccccc;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.readmeContent hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
 }
 
 @media (max-width: 1440px) {

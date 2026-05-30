@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useNavigate } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import styles from '../styles/home.module.css';
 import cmhome from "../assets/cmhome.gif";
 import down from "../assets/down.gif";
@@ -14,7 +16,7 @@ const boxes = [
         title: "Jarvis AI",
         description: "Modular AI assistant with memory, tools, APIs, and automation.",
         category: "AI / Backend",
-        readmeUrl: "https://raw.githubusercontent.com/Luissoares11/AI-ASSISTANT/main/README.md"
+        readmeUrl: "https://raw.githubusercontent.com/Luissoares11/jarvis/main/README.md"
     },
     {
         id: 2,
@@ -37,7 +39,9 @@ function Modal({ project, readmeContent, loading, onClose }) {
                 <div className={styles.modalBody}>
                     {loading
                         ? <p className={styles.modalLoading}>Loading README...</p>
-                        : <pre className={styles.readmeContent}>{readmeContent}</pre>
+                        : <div className={styles.readmeContent}>
+                            <ReactMarkdown remarkPlugins={[remarkGfm]}>{readmeContent}</ReactMarkdown>
+                            </div>
                     }
                 </div>
             </div>
