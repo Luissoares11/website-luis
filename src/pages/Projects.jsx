@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import styles from '../styles/projects.module.css';
 import cs from "../assets/cs.gif"
 import website from "../assets/gif.gif"
@@ -50,7 +52,9 @@ function Modal({ project, readmeContent, loading, onClose }) {
                 <div className={styles.modalBody}>
                     {loading
                         ? <p className={styles.modalLoading}>Loading README...</p>
-                        : <pre className={styles.readmeContent}>{readmeContent}</pre>
+                        : <div className={styles.readmeContent}>
+                            <ReactMarkdown remarkPlugins={[remarkGfm]}>{readmeContent}</ReactMarkdown>
+                            </div>
                     }
                 </div>
             </div>
