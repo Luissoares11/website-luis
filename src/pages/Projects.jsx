@@ -4,6 +4,7 @@ import styles from '../styles/projects.module.css';
 import cs from "../assets/cs.gif"
 import website from "../assets/gif.gif"
 import jarvis from "../assets/jarvis.gif"
+import jarvisui from "../assets/jarvis-ui.gif"
 const projects = [
     {
         id: 1,
@@ -15,6 +16,14 @@ const projects = [
     },
     {
         id: 2,
+        gif: jarvisui,
+        title: "Jarvis UI",
+        description: "Cinematic desktop interface for Jarvis — Electron + React, live panels, mini mode overlay.",
+        category: "Desktop / Frontend",
+        readmeUrl: "https://raw.githubusercontent.com/Luissoares11/jarvis-ui/main/README.md"
+    },
+    {
+        id: 3,
         gif: website,
         title: "Personal Portfolio",
         description: "React portfolio website deployed with GitHub Pages.",
@@ -22,7 +31,7 @@ const projects = [
         readmeUrl: "https://raw.githubusercontent.com/Luissoares11/website-luis/main/README.md"
     },
     {
-        id: 3,
+        id: 4,
         gif: cs,
         title: 'Coming Soon',
         description: 'Coming Soon',
