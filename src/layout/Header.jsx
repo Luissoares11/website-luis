@@ -13,7 +13,7 @@ function Header() {
                     <img src={about} alt="Profile" />
                     <div className={styles.text}>
                         <h1>Luis Soares</h1>
-                        <p>Engineering Student</p>
+                        <p>Computer Science</p>
                     </div>   
                 </div>
             </Link>

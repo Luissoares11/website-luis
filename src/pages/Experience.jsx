@@ -4,7 +4,7 @@ function Experience() {
     return (
         <div className={styles.container}>
             <h2 className={styles.title}>Experience</h2>
-            <p className={styles.paragraf}>Here, you can explore my journey—from my school years to the present.</p>
+            <p className={styles.paragraf}>Here, you can explore my journey from my school years to the present.</p>
 
             <div className={styles.timeline}>
 
@@ -13,7 +13,7 @@ function Experience() {
                     <div className={styles.timelineContent}>
                         <span className={styles.timelinePeriod}>2026 — Present</span>
                         <h3 className={styles.timelineTitle}>University</h3>
-                        <h4 className={styles.timelineSub}>Universidade do Porto & Universidade de Aveiro — Physics Engineering</h4>
+                        <h4 className={styles.timelineSub}>Universidade do Porto - Computer Science</h4>
 
                         <div className={styles.section}>
                             <p className={styles.sectionTitle}>Core Studies</p>
@@ -24,7 +24,7 @@ function Experience() {
                             <p className={styles.sectionTitle}>Programming & Technologies</p>
                             <ul className={styles.list}>
                                 <li>Advanced skills in Python, C, React Native, SQL, and MATLAB.</li>
-                                <li>Developed projects in C++.</li>
+                                <li>Developed projects mainly in Python and React.</li>
                             </ul>
                         </div>
 
@@ -35,7 +35,7 @@ function Experience() {
                                 <li>Designed intent parsing using LLMs (Claude Haiku) with a local pattern cache for faster responses.</li>
                                 <li>Integrated a computation engine using SymPy for symbolic mathematics.</li>
                                 <li>Connected real-time external data sources (weather, football).</li>
-                                <li>Developed an action system for to-dos, reminders, timers, and Google Calendar sync.</li>
+                                <li>Developed an action system for to-dos, reminders, timers, and my own calendar.</li>
                             </ul>
                         </div>
 

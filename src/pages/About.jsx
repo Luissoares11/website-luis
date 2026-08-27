@@ -9,7 +9,7 @@ function About() {
       <div className={styles.textabout}>
         <h2 className={styles.title}>About Me</h2>
         <p className={styles.paragraph}>
-          Hi, I'm Luis Soares, an undergraduate student in Engineering Physics.
+          Hi, I'm Luis Soares, an undergraduate student in Computer Science.
           Despite this unorthodox path, I aspire to become a Software Engineer.
         </p>
 
