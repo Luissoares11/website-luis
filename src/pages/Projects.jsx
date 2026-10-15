@@ -6,26 +6,33 @@ import styles from '../styles/projects.module.css';
 import cs from "../assets/cs.gif"
 import website from "../assets/gif.gif"
 import jarvis from "../assets/jarvis.gif"
-import jarvisui from "../assets/jarvis-ui.gif"
 const projects = [
     {
         id: 1,
         gif: jarvis,
-        title: "Jarvis AI",
-        description: "Modular AI assistant with memory, tools, APIs, and automation.",
+        title: "EDITH",
+        description: "Rebuilt from scratch after Jarvis, my first personal AI: a core for intent parsing, memory, and routing, with separate services for each feature.",
         category: "AI / Backend",
-        readmeUrl: "https://raw.githubusercontent.com/Luissoares11/jarvis/main/README.md"
+        readmeUrl: "https://raw.githubusercontent.com/Luissoares11/EDITH/main/README.md"
     },
     {
         id: 2,
-        gif: jarvisui,
-        title: "Jarvis UI",
-        description: "Cinematic desktop interface for Jarvis — Electron + React, live panels, mini mode overlay.",
-        category: "Desktop / Frontend",
-        readmeUrl: "https://raw.githubusercontent.com/Luissoares11/jarvis-ui/main/README.md"
+        gif: jarvis,
+        title: "Fit-app",
+        description: "Tracks weekly weight and body photos with a weight chart, goal progress, BMI, and before and after comparison. Gym section with weekly plan, exercises by muscle group, and personal records per exercise.",
+        category: "Fullstack",
+        readmeUrl: "https://raw.githubusercontent.com/Luissoares11/fit-app/main/README.md"
     },
     {
         id: 3,
+        gif: website,
+        title: "Calendar",
+        description: "A self-hosted, AI-integrated calendar system that lets you manage events through chat with EDITH. It includes an iPhone React PWA over Tailscale and an automated service for real-time push notifications.",
+        category: "Fullstack",
+        readmeUrl: "https://raw.githubusercontent.com/Luissoares11/calendar-app/main/README.md"
+    },
+    {
+        id: 4,
         gif: website,
         title: "Personal Portfolio",
         description: "React portfolio website deployed with GitHub Pages.",
@@ -33,7 +40,7 @@ const projects = [
         readmeUrl: "https://raw.githubusercontent.com/Luissoares11/website-luis/main/README.md"
     },
     {
-        id: 4,
+        id: 5,
         gif: cs,
         title: 'Coming Soon',
         description: 'Coming Soon',
