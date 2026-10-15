@@ -13,10 +13,10 @@ const boxes = [
     {
         id: 1,
         gif: jarvis,
-        title: "Jarvis AI",
-        description: "Modular AI assistant with memory, tools, APIs, and automation.",
+        title: "EDITH",
+        description: "Rebuilt from scratch after Jarvis, my first personal AI: a core for intent parsing, memory, and routing, with separate services for each feature.",            
         category: "AI / Backend",
-        readmeUrl: "https://raw.githubusercontent.com/Luissoares11/jarvis/main/README.md"
+        readmeUrl: "https://raw.githubusercontent.com/Luissoares11/EDITH/main/README.md"
     },
     {
         id: 2,

@@ -6,6 +6,8 @@ import styles from '../styles/projects.module.css';
 import cs from "../assets/cs.gif"
 import website from "../assets/gif.gif"
 import jarvis from "../assets/jarvis.gif"
+import calendardemo from "../assets/calendar-demo.gif"
+import fitdemo from "../assets/fit-demo.gif"
 const projects = [
     {
         id: 1,
@@ -17,7 +19,7 @@ const projects = [
     },
     {
         id: 2,
-        gif: jarvis,
+        gif: fitdemo,
         title: "Fit-app",
         description: "Tracks weekly weight and body photos with a weight chart, goal progress, BMI, and before and after comparison. Gym section with weekly plan, exercises by muscle group, and personal records per exercise.",
         category: "Fullstack",
@@ -25,7 +27,7 @@ const projects = [
     },
     {
         id: 3,
-        gif: website,
+        gif: calendardemo,
         title: "Calendar",
         description: "A self-hosted, AI-integrated calendar system that lets you manage events through chat with EDITH. It includes an iPhone React PWA over Tailscale and an automated service for real-time push notifications.",
         category: "Fullstack",
@@ -57,6 +59,7 @@ function Modal({ project, readmeContent, loading, onClose }) {
                     <button className={styles.modalClose} onClick={onClose}>✕</button>
                 </div>
                 <div className={styles.modalBody}>
+                    <img src={project.gif} alt={project.title} className={styles.modalGif} />
                     {loading
                         ? <p className={styles.modalLoading}>Loading README...</p>
                         : <div className={styles.readmeContent}>
