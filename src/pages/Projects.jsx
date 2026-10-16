@@ -6,7 +6,7 @@ import styles from '../styles/projects.module.css';
 import cs from "../assets/cs.gif"
 import website from "../assets/gif.gif"
 import jarvis from "../assets/jarvis.gif"
-import calendardemo from "../assets/calendar-demo.gif"
+import calendardemo from "../assets/calendar-demo1.gif"
 import fitdemo from "../assets/fit-demo.gif"
 const projects = [
     {
