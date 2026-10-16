@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -50,7 +50,7 @@ const projects = [
     }
 ];
 
-function Modal({ project, readmeContent, loading, onClose }) {
+function Modal({ project, readmeContent, loading, onClose, onGifClick }) {
     return createPortal(
         <div className={styles.modalOverlay} onClick={onClose}>
             <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
@@ -59,7 +59,12 @@ function Modal({ project, readmeContent, loading, onClose }) {
                     <button className={styles.modalClose} onClick={onClose}>✕</button>
                 </div>
                 <div className={styles.modalBody}>
-                    <img src={project.gif} alt={project.title} className={styles.modalGif} />
+                    <img
+                        src={project.gif}
+                        alt={project.title}
+                        className={styles.modalGif}
+                        onClick={onGifClick}
+                    />
                     {loading
                         ? <p className={styles.modalLoading}>Loading README...</p>
                         : <div className={styles.readmeContent}>
@@ -77,6 +82,16 @@ function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
     const [readmeContent, setReadmeContent] = useState('');
     const [loading, setLoading] = useState(false);
+    const [fullscreenGif, setFullscreenGif] = useState(null);
+
+    useEffect(() => {
+        if (!fullscreenGif) return;
+        const handleKey = (e) => {
+            if (e.key === 'Escape') setFullscreenGif(null);
+        };
+        window.addEventListener('keydown', handleKey);
+        return () => window.removeEventListener('keydown', handleKey);
+    }, [fullscreenGif]);
 
     const openModal = async (project) => {
         setSelectedProject(project);
@@ -132,7 +147,20 @@ function Projects() {
                     readmeContent={readmeContent}
                     loading={loading}
                     onClose={closeModal}
+                    onGifClick={() => setFullscreenGif(selectedProject)}
                 />
+            )}
+
+            {fullscreenGif && createPortal(
+                <div className={styles.fullscreenOverlay} onClick={() => setFullscreenGif(null)}>
+                    <img
+                        src={fullscreenGif.gif}
+                        alt={fullscreenGif.title}
+                        className={styles.fullscreenGif}
+                    />
+                    <button className={styles.fullscreenClose} onClick={() => setFullscreenGif(null)} aria-label="Close fullscreen">✕</button>
+                </div>,
+                document.body
             )}
         </div>
     );
